@@ -1,0 +1,221 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+#root, #__next {
+    isolation: isolate;
+}
+
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    margin: 70px;
+    min-width: fit-content;
+}
+
+.header {
+    width: 100%;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    min-width: fit-content;
+    color: #bca446;
+}
+
+button {
+    cursor: pointer;
+}
+
+.new-btn,
+.row-btn {
+    height: fit-content;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-style: none;
+    font-weight: 700;
+}
+
+.new-btn {
+    background-color: #e6b079;
+    color: #fff;
+}
+
+.new-btn:hover,
+.add-btn:hover {
+    background-color: #dfa770;
+}
+
+::backdrop {
+    background-color: #ccc;
+    opacity: 0.3;
+}
+
+dialog {
+    border-style: none;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.close-btn {
+    background-color: #fff;
+    border-style: none;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+}
+
+button img {
+    height: 25px;
+}
+
+form {
+    margin-top: 20px;
+    display: grid;
+    grid-row-gap: 20px;
+}
+
+.form-input {
+    display: grid;
+    grid-template-columns: 80px auto;
+}
+
+.form-input>label:first-child {
+    font-weight: 600;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.radio-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.add-btn-container {
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.add-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #e6b079;
+    font-weight: 600;
+    color: #fff;
+    font-size: 11pt;
+}
+
+.library {
+    min-width: fit-content;
+}
+
+.table-header {
+    width: 100%;
+    font-weight: 800;
+    color: #577371;
+}
+
+.table-row {
+    grid-column: 1 / 6;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+    grid-column-gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr {
+    grid-column: 1 / 6;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #CCC;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.book-title {
+    min-width: 150px;
+}
+
+.book-author {
+    min-width: 150px;
+}
+
+.book-pages {
+    min-width: 50px;
+}
+
+.book-status {
+    min-width: 130px;
+}
+
+.book-remove {
+    min-width: 50px;
+    display: grid;
+    place-content: center;
+}
+
+.row-btn {
+    width: 120px;
+    font-size: 11pt;
+    text-align: center;
+}
+
+.status {
+    background-color: #f1f1f1;
+}
+
+.status:hover {
+    background-color: #e7e7e7;
+}
+
+.remove-btn {
+    width: fit-content;
+    background-color: #f86a6a;
+}
+
+.remove-btn:hover {
+    background-color: #e86262;
+}
